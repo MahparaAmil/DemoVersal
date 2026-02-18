@@ -20,13 +20,12 @@ jobs:
 
       - uses: actions/checkout@v2
 
-      - name: install dependencies
-        run: npm install
-
-        run: npm test
       - name: run tests
         run: npm test
-      
+        
+      - name: install dependencies
+        run: npm install
+        
       
       - name: Install Vercel CLI
         run: npm install --global vercel@latest
