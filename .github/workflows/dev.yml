@@ -5,9 +5,10 @@ env:
   
 on:
   push:
-    branches-ignore:
+    branches:
       - main
       
+
 jobs:
   Deploy-demo:
     runs-on: ubuntu-latest
