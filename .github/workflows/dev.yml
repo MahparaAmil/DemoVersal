@@ -13,14 +13,12 @@ jobs:
   
     runs-on: ubuntu-latest
 
- - name: Run Tests
-        run: |
-          npm install 
-          npm test
     
     steps:
 
-
+      - name: run tests
+        run: npm test
+        
       - uses: actions/checkout@v2
       
       - name: Install Vercel CLI
